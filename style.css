@@ -193,7 +193,7 @@ img{
         padding: 12vh 45px;
         font-size: 5.0vh;
         font-family: 'inter-bold';
-        background-image: radial-gradient(#505050 3px, transparent 0);
+        background-image: radial-gradient(#191919 3px, transparent 0);
         background-size: 12vh 12vh;
         background-position: 0px -20vh;
         /* for toggle */
@@ -368,6 +368,10 @@ img{
     opacity: 0;
 }
 
+.mt{
+    margin-top: 6vh;
+}
+
     /* ANIMATE */
     .animation-more{
         animation-name: drive;
@@ -399,6 +403,10 @@ img{
         .more-indicator{
             margin-top: 7vh;
             font-size: 10px;
+        }
+
+        .mt{
+            margin-top: 4vh;
         }
 
     }
@@ -471,7 +479,7 @@ img{
 .about-us {
     display: grid;
     row-gap: 3vh;
-    column-gap: 10vw;
+    column-gap: 9vw;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 8vh;
 }
@@ -485,13 +493,13 @@ img{
 .about-us .card-1 .img{
     background-image: url('./assets/about-us/about-us-1.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 10px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 .about-us .card-2 .img{
     background-image: url('./assets/about-us/about-us-2.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 -10px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 .about-us .card-3 .img{
@@ -503,14 +511,14 @@ img{
 .about-us .card-4 .img{
     background-image: url('./assets/about-us/about-us-4.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 3px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 
 .about-us .card-5 .img{
     background-image: url('./assets/about-us/about-us-5.jpg');
     background-repeat: no-repeat;
-    background-position: center; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 2px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 
@@ -522,7 +530,7 @@ img{
 
 .about-us p{
     font-family: 'inter-semibold-italic';
-    font-size: 11px;
+    font-size: 10px;
     color: #7B7B7B;
     margin-top: -2px;
 }
@@ -533,16 +541,57 @@ img{
 
 /* ----------- CONTACT US ------------ */
 .contact-us{
-    margin-top: 20px;
+    margin-top: 4vh;
     background-color: #000;
     color: #fff;
     font-family: 'inter-bold';
     font-size: 25px;
-    background-image: radial-gradient(#505050 3px, transparent 0);
+    background-image: radial-gradient(#191919 3px, transparent 0);
     background-size: 12vh 12vh;
     background-position: 0px -19vh;
 }
 
 .contact-us h1{
     padding: 45px 0 0 20px;
+}
+
+.contact-us form{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 7vh;
+}
+
+.contact-us input[type="text"] {
+    display: block;
+    background: none;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #fff;
+    margin: 0 auto;
+    margin-top: 5vh;
+    width: 100%;
+    height: 30px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'inter-bold';
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 18px;
+    font-family: 'inter-bold';
+}
+
+.contact-us form button{
+    margin-top: 5vh;
+    margin-bottom: 36vh;
+    border: 0;
+    border-radius: 3px;
+    background: none;
+    color: black;
+    padding: 14px 38px;
+    background-color: #fff;
+    font-size: 10px;
+
 }
