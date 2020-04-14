@@ -11,10 +11,12 @@
 </head>
 <body>
     <!-- PAGE CONTAINER -->
-    <div class="container">
+    <div class="container" id="home">
         <!-- STARS -->
         <i class="fas fa-times fa-2x star-1"></i>
         <i class="fas fa-times fa-2x star-2"></i>
+        <i class="fas fa-times fa-2x star-3"></i>
+        <i class="fas fa-times fa-2x star-4"></i>
        <!-- NAV BAR -->
         <nav class="main-nav">
             <!-- HAMBURGER MENU-->
@@ -31,8 +33,8 @@
             <!-- MAIN MENU -->
             <div class="main-menu">
                  <!-- STARS -->
-                <i class="fas fa-times fa star-1-menu"></i>
-                <i class="fas fa-times fa star-2-menu"></i>
+                <i class="fas fa-times fa-md star-1-menu"></i>
+                <i class="fas fa-times fa-md star-2-menu"></i>
                 <!-- HAMBURGER CLOSE -->
                 <div class="hamburger-close-wrap">
                     <div class="hamburger-close">
@@ -43,9 +45,9 @@
                 </div>
                 <!-- LINKS -->
                 <ul class="main-menu-links">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="javascript:delay('#home')">HOME</a></li>
+                    <li><a href="javascript:delay('#projects')">PROJECTS</a></li>
+                    <li><a href="javascript:delay('#aboutus')">ABOUT US</a></li>
                 </ul>
                 <!-- SPACER-->
                 <div class="spacer"></div>
@@ -58,11 +60,11 @@
                     <br>
                     <p>+1 (515) 514 5141</p>
                     <p>info@awf.ca</p>
-                    <a class="btn" href="#">HIRE US</a>
+                    <a class="btn" href="javascript:delay('#contactus')">HIRE US</a>
                 </div>
             </div>
             <!-- HIRE US BUTTON MNU BTN-->
-            <a href="#" class="menu-btn">Hire us</a>
+            <a href="#contactus" class="menu-btn">Hire us</a>
         </nav>
 
         <!-- SHOWCASE -->
@@ -72,7 +74,7 @@
             <h1>WEB</h1>
             <h1>FIRM</h1>
             <h6>MONTREAL, CANADA</h6>
-            <a href="#" class="showcase-btn">VIEW OUR PROJECTS</a>
+            <a href="#projects" class="showcase-btn">VIEW OUR PROJECTS</a>
         </header>
 
         <!-- MORE -->
@@ -82,7 +84,7 @@
         </div>
 
         <!-- PROJECTS -->
-        <section class="projects">
+        <section id="projects" class="projects">
             <div class="section-1">
                 <div class="img"></div>
                 <h3>FEATURED PROJECT</h3>
@@ -104,7 +106,7 @@
         </section>
 
         <!-- ABOUT US -->
-        <section class="about-us">
+        <section id="aboutus" class="about-us">
             <p class='leading'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. In here we are looking to place.</p>
             <div class="card-1">
                 <div class="img"></div>
@@ -141,8 +143,13 @@
     </div>
 
     <!-- CONTACT US -->
-    <section class="contact-us">
+    <section id="contactus" class="contact-us">
+        <!-- STARS -->
+        <i class="fas fa-times fa-lg star-5"></i>
+        <i class="fas fa-times fa-lg star-6"></i>
+        <!-- TITLE -->
         <h1>HIRE US.</h1>
+        <!-- FORM -->
         <form action="">
             <input type="text" placeholder="NAME">
             <input type="text" placeholder="EMAIL">
@@ -151,8 +158,35 @@
         </form>
     </section>
 
+    <!-- FOOTER -->
     <footer>
-
+        <div class="wrapper1">
+            <!-- LEFT -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/" class="fb"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="https://www.instagram.com/" class="ig"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+            <!-- MIDDLE -->
+            <div class="middle">
+                <img src="assets/logo-white.png" alt="ap2 logo">
+                <p>
+                    300 Gouin Est <br>
+                    Montréal  Québec  Canada <br>
+                    H0H 0H0
+                </p>
+            </div>
+            <!-- RIGHT -->
+            <div class="right">
+                <p>
+                    +1 (514) 514 5141<br>
+                    info@awf.ca
+                </p>
+            </div>
+        </div>
+        <div class="wrapper2">
+            <p>Developed / Designed By Anke Media</p>
+            <p>All rights reserved AWF &copy 2020</p>
+        </div>
     </footer>
     
     

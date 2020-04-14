@@ -20,6 +20,11 @@
 }
 
 @font-face {
+    font-family: 'inter-medium-italic';
+    src: url(assets/fonts/Inter-MediumItalic.ttf);
+}
+
+@font-face {
     font-family: 'inter-semibold-italic';
     src: url(assets/fonts/Inter-SemiBoldItalic.ttf);
 }
@@ -28,6 +33,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -76,6 +85,35 @@ img{
         right: 13vw;
     }
 
+    .container .star-3{
+        position: absolute;
+        top: 227vh;
+        right: 12vw;
+    }
+
+    .container .star-4{
+        position: absolute;
+        top: 323vh;
+        left: 10vw;
+    }
+
+    /* CONTACT-US STARS */
+
+    .contact-us .star-5 {
+        position: absolute;
+        top: 9.5vh;
+        right: 14vw;
+        color: white !important;
+        padding: 0 !important;
+    }
+
+    .contact-us .star-6 {
+        position: absolute;
+        top: 57.5vh;
+        left: 9.5vw;
+        color: white !important;
+        padding: 0 !important;
+    }
 
 
     /* MENU STARS */
@@ -493,7 +531,7 @@ img{
 .about-us .card-1 .img{
     background-image: url('./assets/about-us/about-us-1.jpg');
     background-repeat: no-repeat;
-    background-position: 0 10px; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 -5px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 .about-us .card-2 .img{
@@ -511,14 +549,14 @@ img{
 .about-us .card-4 .img{
     background-image: url('./assets/about-us/about-us-4.jpg');
     background-repeat: no-repeat;
-    background-position: 0 3px; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 -3px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 
 .about-us .card-5 .img{
     background-image: url('./assets/about-us/about-us-5.jpg');
     background-repeat: no-repeat;
-    background-position: 0 2px; /* If you only specify one keyword, the other value will be "center" */
+    background-position: 0 -2px; /* If you only specify one keyword, the other value will be "center" */
     background-size: cover; /* 	Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
 }
 
@@ -549,6 +587,7 @@ img{
     background-image: radial-gradient(#191919 3px, transparent 0);
     background-size: 12vh 12vh;
     background-position: 0px -19vh;
+    position: relative;
 }
 
 .contact-us h1{
@@ -585,7 +624,7 @@ img{
 
 .contact-us form button{
     margin-top: 5vh;
-    margin-bottom: 36vh;
+    margin-bottom: 24vh;
     border: 0;
     border-radius: 3px;
     background: none;
@@ -594,4 +633,68 @@ img{
     background-color: #fff;
     font-size: 10px;
 
+}
+
+/* ----------- FOOTER ------------ */
+
+footer{
+    color: #fff;
+    background-color: #000;
+}
+
+footer .wrapper1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.fa-facebook-square{
+    color: #fff !important;
+}
+
+.fa-instagram{
+    color: #fff !important;
+    margin-left: 10px;
+}
+
+footer .wrapper1 .middle img{
+    width: 90px;
+}
+
+footer .wrapper1 .middle p{
+    margin-top: 5px;
+}
+
+footer .wrapper1 p{
+    font-size: 8px;
+}
+
+footer .wrapper1 .middle{
+    text-align: center;
+}
+
+footer .wrapper1 .right{
+    text-align: right;
+}
+
+footer .wrapper2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer .wrapper2 p{
+    font-size: 8px;
+}
+
+footer .wrapper2 p:nth-child(1){
+    font-family: 'inter-medium-italic';
+}
+
+footer .wrapper2 p:nth-child(2){
+    font-family: 'inter-bold';
 }
