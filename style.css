@@ -119,16 +119,18 @@ img{
     /* MENU STARS */
 
     .container .main-nav .main-menu .star-1-menu{
+        font-size: 32px;
         position: absolute;
         top: 68vh;
-        right: 35vw;
+        right: 37.5vw;
         color: white !important;
     }
 
     .container .main-nav .main-menu .star-2-menu{
+        font-size: 32px;
         position: absolute;
         top: 7.5vh;
-        right: 12vw;
+        right: 13vw;
         color: white !important;
     }
 
@@ -218,7 +220,7 @@ img{
 }
 
 /* ----------- MAIN MENU ------------ */
-    .main-nav .main-menu{
+     .main-menu{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -240,13 +242,13 @@ img{
         box-shadow: 10px 10px 20px #aaaaaa;
     }
 
-    .main-nav .main-menu.show {
+     .main-menu.show {
         transform: translate(0);
     }
 
     /* ----- Hamburger close ------ */
 
-    .main-nav .main-menu .hamburger-close-wrap{
+     .main-menu .hamburger-close-wrap{
         font-family: 'inter-semibold';
         margin-left: 10px;
         color: #fff;
@@ -258,27 +260,27 @@ img{
         letter-spacing: -0.5px;
     }
 
-    .main-nav .main-menu .hamburger-close{
+     .main-menu .hamburger-close{
         cursor: pointer;
     }
 
-    .main-nav .main-menu .hamburger-close-wrap h4{
+     .main-menu .hamburger-close-wrap h4{
         margin-left: 12px;
         font-size: 10px;
     }
 
-    .main-nav .main-menu .hamburger-close div{
+     .main-menu .hamburger-close div{
         height: 2px;
         background-color: #fff;
         width: 20px;
         margin-bottom: 2px;
     }
 
-    .main-nav .main-menu .hamburger-close .line-1{
+     .main-menu .hamburger-close .line-1{
         transform: rotate(45deg) translateY(-2px) translateX(7px);
     }
 
-    .main-nav .main-menu .hamburger-close .line-2{
+     .main-menu .hamburger-close .line-2{
         transform: rotate(-45deg) translateY(4px) translateX(5px);
     }
 
@@ -289,7 +291,7 @@ img{
          and (device-height : 812px) 
          and (-webkit-device-pixel-ratio : 3) {
              
-            .main-nav .main-menu .hamburger-close-wrap{
+             .main-menu .hamburger-close-wrap{
                 top: 15px;
                 left: 5px;
             }
@@ -297,44 +299,44 @@ img{
         }
 
     /* ----- Links ------ */
-    .main-nav .main-menu-links li a {
+    .main-menu-links li a {
         color: #fff;
     }
 
-    .main-nav .main-menu-links li a:hover {
+     .main-menu-links li a:hover {
         color: #C9C9C9
     }
 
-    .main-nav .main-menu-links li {
+     .main-menu-links li {
         margin-bottom: 3vh;
     }
 
-    .main-nav .main-menu-links li:nth-child(3) {
+     .main-menu-links li:nth-child(3) {
         margin: 0;
     }
 
     /* ----- Spacer ------ */
-    .main-nav .main-menu .spacer{
+     .main-menu .spacer{
         background-color: #fff;
         height: 2px;
         border-radius: 50px;
     }
 
     /* ----- Info ------ */
-    .main-nav .main-menu .info {
+     .main-menu .info {
         color: #fff;
         font-family: 'inter-regular';
         font-size: 12px;
         margin-top: 1vh;
     }
 
-    .main-nav .main-menu .info h3{
+     .main-menu .info h3{
         font-family: 'inter-semibold';
         letter-spacing: -1px;
         margin-bottom: 10px;
     }
 
-    .main-nav .main-menu .info .btn {
+     .main-menu .info .btn {
         display: inline-block;
         font-size: 10px;
         margin-top: 20px;
@@ -698,3 +700,406 @@ footer .wrapper2 p:nth-child(1){
 footer .wrapper2 p:nth-child(2){
     font-family: 'inter-bold';
 }
+
+/* IPAD SIZES */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1){
+
+    img{
+        width: 100px;
+    }
+
+        /* STARS */
+        .container .star-1{
+            top: 11.27vh;
+            left: 6vw;
+        }
+        .container .star-2{
+            top: 59.5vh;
+            right: 13.5vw;
+        }
+    
+        .container .star-3{
+            top: 275vh;
+            right: 91vw;
+        }
+    
+        .container .star-4{
+            top: 394.5vh;
+            left: 6vw;
+        }
+
+        /* CONTACT-US STARS */
+
+        .contact-us .star-5 {
+            position: absolute;
+            top: 9.5vh;
+            right: 14vw;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+        .contact-us .star-6 {
+            position: absolute;
+            top: 57.5vh;
+            left: 6vw;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+        /* MENU STARS */
+
+        .container .main-nav .main-menu .star-1-menu{
+            top: 67.5vh;
+            right: 44vw;
+        }
+    
+        .container .main-nav .main-menu .star-2-menu{
+            top: 7.5vh;
+            right: 13vw;
+        }
+
+        /* IPAD PRO 11 STARS */
+
+        @media only screen 
+        and (min-device-width: 834px) 
+        and (-webkit-min-device-pixel-ratio: 1){
+
+            /* STARS */
+            .container .star-1{
+                top: 11.27vh;
+                left: 6.5vw;
+            }
+            .container .star-2{
+                top: 59.5vh;
+                right: 23.90vw;
+            }
+        
+            .container .star-3{
+                top: 263vh;
+                right: 90vw;
+            }
+        
+            .container .star-4{
+                top: 371.3vh;
+                left: 7vw;
+            }
+
+            /* CONTACT-US STARS */
+
+            .contact-us .star-5 {
+                position: absolute;
+                top: 9.6vh;
+                right: 24.6vw;
+                color: white !important;
+                padding: 0 !important;
+            }
+
+            .contact-us .star-6 {
+                position: absolute;
+                top: 57.6vh;
+                left: 6.4vw;
+                color: white !important;
+                padding: 0 !important;
+            }
+
+            /* MENU STARS */
+
+            .container .main-nav .main-menu .star-1-menu{
+                top: 68.5vh;
+                right: 41vw;
+            }
+        
+            .container .main-nav .main-menu .star-2-menu{
+                top: 8.5vh;
+                right: 24vw;
+            }
+
+        }
+
+        /* IPAD PRO 12.9 STARS */
+        @media only screen 
+        and (min-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1){
+            
+            /* STARS */
+            .container .star-1{
+                top: 11.27vh;
+                left: 6.5vw;
+            }
+            .container .star-2{
+                top: 59.5vh;
+                right: 23.90vw;
+            }
+        
+            .container .star-3{
+                top: 263vh;
+                right: 90vw;
+            }
+        
+            .container .star-4{
+                top: 371.3vh;
+                left: 7vw;
+            }
+
+            /* CONTACT-US STARS */
+
+            .contact-us .star-5 {
+                position: absolute;
+                top: 9.6vh;
+                right: 24.6vw;
+                color: white !important;
+                padding: 0 !important;
+            }
+
+            .contact-us .star-6 {
+                position: absolute;
+                top: 57.6vh;
+                left: 6.4vw;
+                color: white !important;
+                padding: 0 !important;
+            }
+
+            /* MENU STARS */
+
+            .container .main-nav .main-menu .star-1-menu{
+                top: 68.5vh;
+                right: 41vw;
+            }
+        
+            .container .main-nav .main-menu .star-2-menu{
+                top: 8.5vh;
+                right: 24vw;
+            }
+        }
+
+    /* ----------- NAV ------------ */
+
+    .main-nav{
+        padding-top: 20px;
+    }
+
+    .hamburger div {
+        height: 3px;
+        background-color: #000;
+        width: 28px;
+        margin-bottom: 3px;
+    }
+    
+    .hamburger .line-3 {
+        width: 22px;
+    }
+
+    .main-nav .hamburger-menu h4 {
+        font-family: 'inter-semibold';
+        letter-spacing: 0px;
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .main-nav .menu-btn{
+        font-size: 14px;
+        font-family: 'inter-bold';
+        color: #fff;
+        background-color: #000;
+        padding: 5px 12px;
+        border-radius: 3px;
+    }
+
+    /* ----- MAIN MENU ------ */
+
+    .main-menu{
+        padding: 15vh 45px;
+    }
+
+        /* ----- Links ------ */
+        .main-menu-links li {
+            color: #fff;
+            font-size: 7vh;
+        }
+
+        /* ----- Hamburger close ------ */
+
+        .main-menu .hamburger-close-wrap{
+            margin-left: 25px;
+            top: 25px;
+        }
+
+        .main-menu .hamburger-close-wrap h4{
+            letter-spacing: -0.5px;
+            font-size: 12px;
+            margin-top: 2px;
+        }
+
+        .main-menu .hamburger-close div{
+            height: 3px;
+            width: 25px;
+        }
+
+        .main-menu .hamburger-close .line-1{
+            transform: rotate(45deg) translateY(-2px) translateX(7px);
+        }
+
+        .main-menu .hamburger-close .line-2{
+            transform: rotate(-45deg) translateY(3px) translateX(5px);
+        }
+
+
+        /* ----- Spacer ------ */
+        .main-menu .spacer{
+            height: 3px;
+        }
+
+        /* ----- Info ------ */
+        .main-menu .info {
+            font-size: 14px;
+        }
+
+        .main-menu .info .btn {
+            font-size: 12px;
+            padding: 14px 45px;
+        }
+
+    /* ----------- HEADER ------------ */
+
+    .showcase {
+        margin: 26vh 0 0 10px;
+    }
+
+    .showcase h1{
+        line-height: 7vh;
+    }
+
+    .showcase h2 {
+        font-size: 1.2em;
+    }
+
+    .showcase h6 {
+        font-size: 0.8em;
+    }
+
+    .showcase .showcase-btn {
+        font-size: 0.8em;
+        margin-top: 55px;
+        padding: 16px 42px;
+    }  
+
+    /* ----------- MORE INDICATOR ------------ */
+    .more-indicator{
+        margin-top: 14vh;
+    }
+    
+    /* ----------- PROJECTS ------------ */
+
+    .projects .img{
+        height: 37vh;
+        margin-top: 8vh;
+    }
+
+
+    .projects h3{
+        font-size: 14px;
+    }
+
+    .projects h2{
+        font-size: 24px;
+    }
+
+    .projects p{
+        font-size: 18px;
+    }
+
+    /* ----------- ABOUT US ------------ */
+    .about-us {
+        row-gap: 3vh;
+        column-gap: 8vw;
+        margin-top: 10vh;
+    }
+
+    .about-us .img{
+        height: 300px;
+        border-radius: 6px;
+    }
+
+    .about-us h3{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    .about-us p{
+        font-size: 12px;
+    }
+
+    .about-us .leading{
+        margin-top: 7.5vh;
+        font-size: 20px;
+    }
+
+    /* MORE INDICATOR */
+
+    .mt{
+        margin-top: 4vh;
+    }
+
+    /* ----------- CONTACT US ------------ */
+    .contact-us{
+        margin-top: 7vh;
+        font-size: 27px;
+    }
+
+    .contact-us h1{
+        padding: 55px 0 0 35px;
+    }
+
+    .contact-us input[type="text"] {
+        font-size: 20px;
+    }
+
+    ::placeholder{
+        font-size: 20px;
+    }
+
+    .contact-us form button{
+        font-size: 12px;
+    }
+
+    /* ----------- FOOTER ------------ */
+
+    .fa-instagram{
+        margin-left: 12px;
+        font-size: 40px;
+    }
+
+    .fa-facebook-square{
+        font-size: 40px;
+    }
+
+    footer .wrapper1 .middle img{
+        width: 120px;
+    }
+
+    footer .wrapper1 .middle p{
+        margin-top: 10px;
+    }
+
+    footer .wrapper1 .right p{
+        font-size: 10px;
+    }
+
+
+    footer .wrapper1 p{
+        font-size: 10px;
+    }
+
+    footer .wrapper2 {
+        padding: 25px 0;
+    }
+
+    footer .wrapper2 p{
+        font-size: 10px;
+    }
+    
+
+  }
