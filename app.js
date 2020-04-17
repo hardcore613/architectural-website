@@ -4,7 +4,8 @@ star2 = document.querySelector('.star-2'),
 star3 = document.querySelector('.star-3'),
 star4 = document.querySelector('.star-4'),
 star5 = document.querySelector('.star-5'),
-star6 = document.querySelector('.star-6');
+star6 = document.querySelector('.star-6'),
+star7 = document.querySelector('.star-7');
 
 const star1Menu = document.querySelector('.star-1-menu'),
 star2Menu = document.querySelector('.star-2-menu');
@@ -114,6 +115,7 @@ window.addEventListener("scroll", function() {
     star4.style.transform = "rotate("+window.pageYOffset+"deg)";
     star5.style.transform = "rotate("+window.pageYOffset+"deg)";
     star6.style.transform = "rotate("+window.pageYOffset+"deg)";
+    star7.style.transform = "rotate("+window.pageYOffset+"deg)";
 });
 
 

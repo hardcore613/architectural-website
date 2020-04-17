@@ -73,41 +73,54 @@ img{
     /* STARS */
     .container .star-1{
         position: absolute;
-        top: 11vh;
-        left: 9vw;
+        top: 90px;
+        left: 35px;
+        font-size: 30px;
     }
+
     .container .star-2{
         position: absolute;
-        top: 59vh;
-        right: 13vw;
+        top: 480px;
+        right: 50px;
+        font-size: 30px;
     }
 
     .container .star-3{
         position: absolute;
-        top: 227vh;
-        right: 12vw;
+        top: 950px;
+        right: 70px;
+        font-size: 30px;
     }
 
     .container .star-4{
         position: absolute;
-        top: 323vh;
-        left: 10vw;
+        top: 1935px;
+        left: 50px;
+        font-size: 30px;
     }
+
+    .container .star-5{
+        position: absolute;
+        top: 2680px;
+        right: 60px;
+        font-size: 30px;
+    }
+
 
     /* CONTACT-US STARS */
 
-    .contact-us .star-5 {
+    .contact-us .star-6 {
         position: absolute;
-        top: 9.5vh;
-        right: 14vw;
+        top: 75px;
+        right: 60px;
         color: white !important;
         padding: 0 !important;
     }
 
-    .contact-us .star-6 {
+    .contact-us .star-7 {
         position: absolute;
-        top: 57.5vh;
-        left: 9.5vw;
+        top: 500px;
+        left: 40px;
         color: white !important;
         padding: 0 !important;
     }
@@ -118,17 +131,184 @@ img{
     .container .main-nav .main-menu .star-1-menu{
         font-size: 32px;
         position: absolute;
-        top: 68vh;
-        right: 37.5vw;
+        top: 560px;
+        left: 220px;
         color: white !important;
     }
 
     .container .main-nav .main-menu .star-2-menu{
         font-size: 32px;
         position: absolute;
-        top: 7.5vh;
-        right: 13vw;
+        top: 70px;
+        right: 70px;
         color: white !important;
+    }
+
+    /* iPHONE X - Portrait */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+
+        /* STARS */
+        .container .star-1{
+            position: absolute;
+            top: 80px;
+            left: 35px;
+            font-size: 30px;
+        }
+
+        .container .star-2{
+            position: absolute;
+            top: 440px;
+            right: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-3{
+            position: absolute;
+            top: 860px;
+            right: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-4{
+            position: absolute;
+            top: 1860px;
+            left: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-5{
+            position: absolute;
+            top: 2615px;
+            right: 60px;
+            font-size: 30px;
+        }
+
+
+        /* CONTACT-US STARS */
+
+        .contact-us .star-6 {
+            position: absolute;
+            top: 60px;
+            right: 60px;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+        .contact-us .star-7 {
+            position: absolute;
+            top: 460px;
+            left: 40px;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+
+        /* MENU STARS */
+
+        .container .main-nav .main-menu .star-1-menu{
+            font-size: 32px;
+            position: absolute;
+            top: 500px;
+            left: 230px;
+            color: white !important;
+        }
+
+        .container .main-nav .main-menu .star-2-menu{
+            font-size: 32px;
+            position: absolute;
+            top: 60px;
+            right: 70px;
+            color: white !important;
+        }
+            
+        
+    }
+
+    /* iPHONE 8 - Portrait */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+            /* STARS */
+        .container .star-1{
+            position: absolute;
+            top: 70px;
+            left: 35px;
+            font-size: 30px;
+        }
+
+        .container .star-2{
+            position: absolute;
+            top: 380px;
+            right: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-3{
+            position: absolute;
+            top: 780px;
+            right: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-4{
+            position: absolute;
+            top: 1795px;
+            left: 50px;
+            font-size: 30px;
+        }
+
+        .container .star-5{
+            position: absolute;
+            top: 2520px;
+            right: 60px;
+            font-size: 30px;
+        }
+
+
+        /* CONTACT-US STARS */
+
+        .contact-us .star-6 {
+            position: absolute;
+            top: 70px;
+            right: 60px;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+        .contact-us .star-7 {
+            position: absolute;
+            top: 430px;
+            left: 35px;
+            color: white !important;
+            padding: 0 !important;
+        }
+
+
+        /* MENU STARS */
+
+        .container .main-nav .main-menu .star-1-menu{
+            font-size: 32px;
+            position: absolute;
+            top: 400px;
+            left: 220px;
+            color: white !important;
+        }
+
+        .container .main-nav .main-menu .star-2-menu{
+            font-size: 32px;
+            position: absolute;
+            top: 45px;
+            right: 70px;
+            color: white !important;
+        }
+
+    
+
     }
 
     /* ANIMATE */
@@ -1002,6 +1182,7 @@ footer .wrapper2 p:nth-child(2){
             top: 11.27vh;
             left: 6vw;
         }
+
         .container .star-2{
             top: 59.5vh;
             right: 13.5vw;
