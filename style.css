@@ -41,10 +41,7 @@ html{
 
 body {
     font-family: 'inter-regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fff;
-    background-image: radial-gradient(#F0F0F0 3px, transparent 0);
-    background-size: 12vh 12vh;
-    background-position: 0px -17vh;
+    background-color: #FDFDFD;
     color: #000;
     font-size: 16px;
     line-height: 1.5;
@@ -67,7 +64,7 @@ img{
     width: 80px;
 }
 
-/* MOBILE FIRST */
+/* MOBILE FIRST - IPHONE XS MAX */
 .container {
     width: 90%;
     margin: auto;
@@ -154,12 +151,10 @@ img{
     }
     
 
-
-
 /* ----------- NAV ------------ */
 
 .main-nav{
-    background-color: #fff;
+    background-color: #FDFDFD;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,17 +162,17 @@ img{
 }
 
     /* iPHONE X - Portrait */
-   /* 2436x1125px at 458ppi */
-   @media only screen 
-   and (device-width : 375px) 
-   and (device-height : 812px) 
-   and (-webkit-device-pixel-ratio : 3) { 
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
 
-    .main-nav{
-        padding-top: 12px;
-       }
+        .main-nav{
+            padding-top: 12px;
+        }
 
-   }
+    }
+    
 
 .main-nav .wrapper {
     display: none;
@@ -230,17 +225,39 @@ img{
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 12vh 45px;
-        font-size: 5.0vh;
+        padding: 90px 40px;
         font-family: 'inter-bold';
-        background-image: radial-gradient(#191919 3px, transparent 0);
-        background-size: 12vh 12vh;
-        background-position: 0px -20vh;
         /* for toggle */
         transform: translateX(-120%);
         transition: transform 0.7s ease-in-out;
         box-shadow: 10px 10px 20px #aaaaaa;
     }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) {
+            
+            .main-menu{
+                padding: 70px 45px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .main-menu{
+                padding: 65px 40px;
+            }
+
+        }
+
+    
 
      .main-menu.show {
         transform: translate(0);
@@ -285,7 +302,6 @@ img{
     }
 
         /* iPHONE X - Portrait */
-        /* 2436x1125px at 458ppi */
          @media only screen 
          and (device-width : 375px) 
          and (device-height : 812px) 
@@ -308,8 +324,37 @@ img{
     }
 
      .main-menu-links li {
-        margin-bottom: 3vh;
+        font-size: 40px;
+        margin-bottom: 25px;
     }
+
+        /* iPHONE X - Portrait */   
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) {
+            
+            .main-menu-links li{
+                font-size: 35px;
+                margin-bottom: 22px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .main-menu-links li{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+        }
+
+    
 
      .main-menu-links li:nth-child(3) {
         margin: 0;
@@ -327,7 +372,7 @@ img{
         color: #fff;
         font-family: 'inter-regular';
         font-size: 12px;
-        margin-top: 1vh;
+        margin-top: 10px;
     }
 
      .main-menu .info h3{
@@ -336,7 +381,7 @@ img{
         margin-bottom: 10px;
     }
 
-     .main-menu .info .btn {
+    .main-menu .info .btn {
         display: inline-block;
         font-size: 10px;
         margin-top: 20px;
@@ -349,23 +394,85 @@ img{
 /* ----------- HEADER ------------ */
 
 .showcase {
-    margin: 25vh 0 0 10px;
+    margin: 210px 0 0 10px;
 }
+
+        /* iPHONE X - Portrait */   
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) {
+            
+            .showcase {
+                margin: 185px 0 0 10px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .showcase {
+                margin: 140px 0 0 10px;
+            }
+
+        }
 
 .showcase h1{
     font-family: 'inter-extrabold';
     letter-spacing: -0.8px;
-    font-size: 10vw;
-    line-height: 6vh;
+    font-size: 42px;
+    line-height: 42px;
     font-weight: 900;
 }
+
+        /* iPHONE X - Portrait */   
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) {
+            
+            .showcase h1{
+                font-size: 38px;
+                line-height: 40px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .showcase h1{
+                font-size: 38px;
+                line-height: 38px;
+            }
+
+        }
 
 .showcase h2 {
     font-family: 'inter-semibold';
     font-size: 1.0em;
     color: #707070;
-    margin-bottom: 0.3vh;
+    margin-bottom: 5px;
 }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .showcase h2 {
+            font-size: 0.8em;
+        }
+
+        }
 
 .showcase h6 {
     margin-top: 1vh;
@@ -386,91 +493,124 @@ img{
     border-radius: 5px;
 }
 
-    /* iPHONE X - Portrait */
-   /* 2436x1125px at 458ppi */
-   @media only screen 
-   and (device-width : 375px) 
-   and (device-height : 812px) 
-   and (-webkit-device-pixel-ratio : 3) { 
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
 
-    .showcase .showcase-btn {
-        padding: 13px 35px;
-       }
+        .showcase .showcase-btn {
+            padding: 13px 35px;
+        }
 
-   }
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+        .showcase .showcase-btn {
+            margin-top: 40px;
+            padding: 14px 30px;
+        }
+
+        }
 
 /* ----------- MORE INDICATOR ------------ */
 .more-indicator{
     text-align: center;
     font-family: 'inter-semibold';
     font-size: 12px;
-    margin-top: 12vh;
+    margin-top: 90px;
     opacity: 0;
 }
 
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .more-indicator{
+                margin-top: 60px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .more-indicator{
+                margin-top: 50px;
+                font-size: 10px;
+            }
+
+        }
+
+
+
 .mt{
-    margin-top: 6vh;
+    margin-top: 50px;
 }
 
-    /* ANIMATE */
-    .animation-more{
-        animation-name: drive;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-        animation-delay: 0.5s;
-        animation-iteration-count: infinite;
+/* ANIMATE */
+.animation-more{
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* KEYFRAMES */
+@keyframes drive{
+    from{
+        transform: translateY(0);
+        opacity: 0
     }
-
-    /* KEYFRAMES */
-    @keyframes drive{
-        from{
-            transform: translateY(0);
-            opacity: 0
-        }
-        to{
-            transform: translateY(15px);
-            opacity: 1
-        }
+    to{
+        transform: translateY(15px);
+        opacity: 1
     }
-
-    /* iPHONE X - Portrait */
-   /* 2436x1125px at 458ppi */
-    @media only screen 
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) { 
-
-        .more-indicator{
-            margin-top: 7vh;
-            font-size: 10px;
-        }
-
-        .mt{
-            margin-top: 4vh;
-        }
-
-    }
+}
 
 /* ----------- PROJECTS ------------ */
 
 .projects .img{
     width: 100%;
-    height: 25vh;
-    margin-top: 4vh;
+    height: 200px;
+    margin-top: 60px;
 }
 
-    /* iPHONE X - Portrait */
-   /* 2436x1125px at 458ppi */
-   @media only screen 
-   and (device-width : 375px) 
-   and (device-height : 812px) 
-   and (-webkit-device-pixel-ratio : 3) { 
+        /* iPHONE X - Portrait */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) { 
 
-        .projects .img{
-           margin-top: 6vh;
-        }
+            .projects .img{
+                height: 190px;
+                margin-top: 45px;
+            }
 
-   }
+    }
+
+    /* iPHONE 8 - Portrait */
+    @media only screen 
+    and (device-width : 375px) 
+    and (device-height : 667px) 
+    and (-webkit-device-pixel-ratio : 2) {
+        
+            .projects .img{
+                margin-top: 40px;
+            }
+
+    }
 
 .projects .section-1 .img{
     background-image: url('./assets/projects/1.jpg');
@@ -518,11 +658,39 @@ img{
 /* ----------- ABOUT US ------------ */
 .about-us {
     display: grid;
-    row-gap: 3vh;
-    column-gap: 9vw;
+    row-gap: 20px;
+    column-gap: 35px;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 8vh;
+    margin-top: 70px;
 }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .about-us {
+                margin-top: 60px;
+                row-gap: 15px;
+                column-gap: 30px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .about-us {
+                margin-top: 50px;
+                row-gap: 12px;
+                column-gap: 30px;
+            }
+
+        }
 
 .about-us .img{
     width: 100%;
@@ -581,26 +749,95 @@ img{
 
 /* ----------- CONTACT US ------------ */
 .contact-us{
-    margin-top: 4vh;
+    margin-top: 50px;
     background-color: #000;
     color: #fff;
     font-family: 'inter-bold';
     font-size: 25px;
-    background-image: radial-gradient(#191919 3px, transparent 0);
-    background-size: 12vh 12vh;
-    background-position: 0px -19vh;
     position: relative;
 }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .contact-us{
+                margin-top: 45px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .contact-us{
+                margin-top: 40px;
+            }
+
+        }
 
 .contact-us h1{
     padding: 45px 0 0 20px;
 }
 
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .contact-us h1{
+                padding: 40px 0 0 20px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .contact-us h1{
+                padding: 38px 0 0 20px;
+            }
+
+        }
+
 .contact-us form{
     width: 70%;
     margin: 0 auto;
-    margin-top: 7vh;
+    margin-top: 65px;
 }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .contact-us form{
+                margin-top: 60px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .contact-us form{
+                margin-top: 50px;
+            }
+
+        }
 
 .contact-us input[type="text"] {
     display: block;
@@ -610,13 +847,37 @@ img{
     border-radius: 0;
     border-bottom: 2px solid #fff;
     margin: 0 auto;
-    margin-top: 5vh;
+    margin-top: 40px;
     width: 100%;
     height: 30px;
     color: #fff;
     font-size: 18px;
     font-family: 'inter-bold';
 }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            .contact-us input[type="text"] {
+                margin-top: 35px;
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .contact-us input[type="text"] {
+                margin-top: 35px;
+            }
+
+        }
 
 ::placeholder{
     color: #fff;
@@ -626,7 +887,7 @@ img{
 
 .contact-us form button{
     margin-top: 5vh;
-    margin-bottom: 24vh;
+    margin-bottom: 200px;
     border: 0;
     border-radius: 3px;
     background: none;
@@ -634,8 +895,32 @@ img{
     padding: 14px 38px;
     background-color: #fff;
     font-size: 10px;
-
 }
+
+        /* iPHONE X - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 812px) 
+        and (-webkit-device-pixel-ratio : 3) { 
+
+            
+            .contact-us form button{
+                margin-bottom: 180px
+            }
+
+        }
+
+        /* iPHONE 8 - Portrait */
+        @media only screen 
+        and (device-width : 375px) 
+        and (device-height : 667px) 
+        and (-webkit-device-pixel-ratio : 2) {
+            
+            .contact-us form button{
+                margin-bottom: 160px
+            }
+
+        }
 
 /* ----------- FOOTER ------------ */
 
@@ -701,11 +986,12 @@ footer .wrapper2 p:nth-child(2){
     font-family: 'inter-bold';
 }
 
-/* IPAD SIZES */
+/* IPAD SIZES STARTING FROM 9.7"*/
 
 @media only screen 
   and (min-device-width: 768px) 
-  and (-webkit-min-device-pixel-ratio: 1){
+  and (-webkit-min-device-pixel-ratio: 1) 
+  and (orientation : portrait){
 
     img{
         width: 100px;
@@ -765,7 +1051,8 @@ footer .wrapper2 p:nth-child(2){
 
         @media only screen 
         and (min-device-width: 834px) 
-        and (-webkit-min-device-pixel-ratio: 1){
+        and (-webkit-min-device-pixel-ratio: 1) 
+        and (orientation : portrait){
 
             /* STARS */
             .container .star-1{
@@ -822,56 +1109,65 @@ footer .wrapper2 p:nth-child(2){
         /* IPAD PRO 12.9 STARS */
         @media only screen 
         and (min-device-width: 1024px) 
-        and (-webkit-min-device-pixel-ratio: 1){
+        and (-webkit-min-device-pixel-ratio: 1) 
+        and (orientation : portrait){
             
             /* STARS */
             .container .star-1{
                 top: 11.27vh;
                 left: 6.5vw;
+                font-size: 50px;
             }
             .container .star-2{
-                top: 59.5vh;
-                right: 23.90vw;
+                top: 59.2vh;
+                right: 28.5vw;
+                font-size: 50px;
             }
         
             .container .star-3{
-                top: 263vh;
+                top: 263.5vh;
                 right: 90vw;
+                font-size: 50px;
             }
         
             .container .star-4{
-                top: 371.3vh;
+                top: 359.8vh;
                 left: 7vw;
+                font-size: 50px;
             }
 
             /* CONTACT-US STARS */
 
             .contact-us .star-5 {
                 position: absolute;
-                top: 9.6vh;
-                right: 24.6vw;
+                top: 9.5vh;
+                right: 28.6vw;
                 color: white !important;
                 padding: 0 !important;
+                font-size: 50px;
             }
 
             .contact-us .star-6 {
                 position: absolute;
-                top: 57.6vh;
-                left: 6.4vw;
+                top: 45.6vh;
+                left: 6.0vw;
                 color: white !important;
                 padding: 0 !important;
+                font-size: 50px;
             }
 
             /* MENU STARS */
 
             .container .main-nav .main-menu .star-1-menu{
-                top: 68.5vh;
-                right: 41vw;
+                top: 68.3vh;
+                right: 43.7vw;
+                font-size: 50px;
             }
         
             .container .main-nav .main-menu .star-2-menu{
-                top: 8.5vh;
-                right: 24vw;
+                top: 8.0vh;
+                right: 28vw;
+                font-size: 50px;
             }
         }
 
@@ -990,6 +1286,15 @@ footer .wrapper2 p:nth-child(2){
     .more-indicator{
         margin-top: 14vh;
     }
+
+        /* IPAD PRO 12.9 */
+        @media only screen 
+        and (min-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1){
+            .more-indicator{
+                margin-top: 22vh;
+            }
+        }
     
     /* ----------- PROJECTS ------------ */
 
@@ -1010,6 +1315,16 @@ footer .wrapper2 p:nth-child(2){
     .projects p{
         font-size: 18px;
     }
+
+        /* IPAD PRO 12.9 */
+        @media only screen 
+        and (min-device-width: 1024px) 
+        and (-webkit-min-device-pixel-ratio: 1) 
+        and (orientation : portrait){
+            .projects{
+                margin-top: 7vh;
+            }
+        }
 
     /* ----------- ABOUT US ------------ */
     .about-us {
@@ -1101,5 +1416,20 @@ footer .wrapper2 p:nth-child(2){
         font-size: 10px;
     }
     
+
+  }
+
+
+/* IPAD SIZES STARTING FROM 9.7" LANDSCAPE*/
+@media only screen 
+  and (min-device-width: 768px) 
+  and (-webkit-min-device-pixel-ratio: 1)
+  and (orientation : landscape){
+
+    body{
+    
+        background-color: red;
+    }
+
 
   }
