@@ -119,4 +119,30 @@ window.addEventListener("scroll", function() {
 });
 
 
+/* LANDSCAPE MODE DETECTION */
 
+let width = screen.width;
+
+if(window.orientation === 90 || window.orientation === -90 && width <= 600 ){
+    this.document.querySelector('.container').classList.add('landscape');
+    this.document.querySelector('.contact-us').classList.add('landscape');
+    //this.document.querySelector('.result').innerHTML = this.window.orientation;
+    this.document.querySelector('.result').innerHTML = width;
+}else{
+    this.document.querySelector('.container').classList.remove('landscape');
+    this.document.querySelector('.contact-us').classList.remove('landscape');
+}
+
+// Listen for orientation changes
+window.addEventListener("orientationchange", function() {
+    // Announce the new orientation number
+    if(this.window.orientation === 90 || this.window.orientation === -90 && width <= 500){
+        this.document.querySelector('.container').classList.add('landscape');
+        this.document.querySelector('.contact-us').classList.add('landscape');
+        //this.document.querySelector('.result').innerHTML = this.window.orientation;
+        this.document.querySelector('.result').innerHTML = width;
+    }else{
+        this.document.querySelector('.container').classList.remove('landscape');
+        this.document.querySelector('.contact-us').classList.remove('landscape');
+    }
+});
