@@ -64,7 +64,11 @@ img{
     width: 80px;
 }
 
-/* MOBILE FIRST - IPHONE XS MAX */
+/* ---------------------------- */
+/* ------ MOBILE FIRST  ------- */
+/* ------ IPHONE XS MAX ------- */
+/* ---------------------------- */
+
 .container {
     width: 90%;
     margin: auto;
@@ -1166,6 +1170,43 @@ footer .wrapper2 p:nth-child(2){
     font-family: 'inter-bold';
 }
 
-.landscape {
+.landscape-mobile-sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.landscape-mobile-sign p {
+    line-height: 60px;
+    font-family: 'inter-bold';
+    font-size: 50px;
+    text-align: left;
+}
+
+.landscape-mobile-sign .star-1-landscape{
+    position: absolute;
+    right: 22vw;
+    top: 10vw;
+    font-size: 40px;
+}
+
+.landscape-mobile-sign .star-2-landscape{
+    position: absolute;
+    left: 6vw;
+    bottom: 6vw;
+    font-size: 40px;
+}
+
+.landscape-mobile {
     display: none;
 }
+
+/* ---------------------------- */
+/* ------ TABLET STYLE  ------- */
+/* ---------------------------- */
+

@@ -5,7 +5,9 @@ star3 = document.querySelector('.star-3'),
 star4 = document.querySelector('.star-4'),
 star5 = document.querySelector('.star-5'),
 star6 = document.querySelector('.star-6'),
-star7 = document.querySelector('.star-7');
+star7 = document.querySelector('.star-7'),
+star8 = document.querySelector('.star-1-landscape'),
+star9 = document.querySelector('.star-2-landscape');
 
 const star1Menu = document.querySelector('.star-1-menu'),
 star2Menu = document.querySelector('.star-2-menu');
@@ -35,9 +37,9 @@ document.querySelector('.hamburger').addEventListener('click', () => {
 
 });
 
-/* Menu links clicked */
+/* ---------- Menu links clicked ------------- */
 
-/* projects */
+/* home */
 menuLinkListArr[0].addEventListener('click', e => {
     document.querySelector('.main-menu').classList.remove('show');
     /* wait for menu to close before going down to section*/
@@ -97,6 +99,8 @@ hireUsBtn.addEventListener('click', e => {
     }, 600);
 })
 
+/* ---------- Menu links clicked end ------------- */
+
 /* Menu Close */
 document.querySelector('.hamburger-close').addEventListener('click', () => {
     document.querySelector('.main-menu').classList.remove('show');
@@ -123,26 +127,65 @@ window.addEventListener("scroll", function() {
 
 let width = screen.width;
 
+// check devices orientation and width when page starts
 if(window.orientation === 90 || window.orientation === -90 && width <= 600 ){
-    this.document.querySelector('.container').classList.add('landscape');
-    this.document.querySelector('.contact-us').classList.add('landscape');
-    //this.document.querySelector('.result').innerHTML = this.window.orientation;
-    this.document.querySelector('.result').innerHTML = width;
+    //remove the container, contact us and the footer
+    this.document.querySelector('.container').classList.add('landscape-mobile');
+    this.document.querySelector('.contact-us').classList.add('landscape-mobile');
+    this.document.querySelector('footer').classList.add('landscape-mobile');
+    //add the landscape mobile sign
+    this.document.querySelector('.landscape-mobile-sign').classList.remove('landscape-mobile');
+    
+    // Add stars
+
+    /* Star animation */
+    star8.classList.add('animation-star-menu');
+    star9.classList.add('animation-star-menu');
 }else{
-    this.document.querySelector('.container').classList.remove('landscape');
-    this.document.querySelector('.contact-us').classList.remove('landscape');
+    //add the container, contact us and the footer
+    this.document.querySelector('.container').classList.remove('landscape-mobile');
+    this.document.querySelector('.contact-us').classList.remove('landscape-mobile');
+    this.document.querySelector('footer').classList.remove('landscape-mobile');
+    //remove the landscape mobile sign
+    this.document.querySelector('.landscape-mobile-sign').classList.add('landscape-mobile');
+
+    // Remove stars
+
+    /* Star animation */
+    star8.classList.remove('animation-star-menu');
+    star9.classList.remove('animation-star-menu');
 }
 
 // Listen for orientation changes
 window.addEventListener("orientationchange", function() {
     // Announce the new orientation number
     if(this.window.orientation === 90 || this.window.orientation === -90 && width <= 500){
-        this.document.querySelector('.container').classList.add('landscape');
-        this.document.querySelector('.contact-us').classList.add('landscape');
-        //this.document.querySelector('.result').innerHTML = this.window.orientation;
-        this.document.querySelector('.result').innerHTML = width;
+        //remove the container, contact us and the footer
+        this.document.querySelector('.container').classList.add('landscape-mobile');
+        this.document.querySelector('.contact-us').classList.add('landscape-mobile');
+        this.document.querySelector('footer').classList.add('landscape-mobile');
+        //add the landscape mobile sign
+        this.document.querySelector('.landscape-mobile-sign').classList.remove('landscape-mobile');
+        this.document.querySelector('.landscape-mobile-sign').classList.remove('landscape-mobile');
+        // Add stars
+
+        /* Star animation */
+        star8.classList.add('animation-star-menu');
+        star9.classList.add('animation-star-menu');
+
     }else{
-        this.document.querySelector('.container').classList.remove('landscape');
-        this.document.querySelector('.contact-us').classList.remove('landscape');
+        //add the container, contact us and the footer
+        this.document.querySelector('.container').classList.remove('landscape-mobile');
+        this.document.querySelector('.contact-us').classList.remove('landscape-mobile');
+        this.document.querySelector('footer').classList.remove('landscape-mobile');
+        //remove the landscape mobile sign
+        this.document.querySelector('.landscape-mobile-sign').classList.add('landscape-mobile');
+
+        // Remove stars
+
+        /* Star animation */
+        star8.classList.remove('animation-star-menu');
+        star9.classList.remove('animation-star-menu');
+
     }
 });
