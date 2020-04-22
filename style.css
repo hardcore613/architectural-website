@@ -470,18 +470,18 @@ img{
         font-size: 10px;
     }
 
-     .main-menu .hamburger-close div{
+    .main-menu .hamburger-close div{
         height: 2px;
         background-color: #fff;
         width: 20px;
         margin-bottom: 2px;
     }
 
-     .main-menu .hamburger-close .line-1{
+    .main-menu .hamburger-close .line-1{
         transform: rotate(45deg) translateY(-2px) translateX(7px);
     }
 
-     .main-menu .hamburger-close .line-2{
+    .main-menu .hamburger-close .line-2{
         transform: rotate(-45deg) translateY(4px) translateX(5px);
     }
 
@@ -1607,13 +1607,3 @@ footer .wrapper2 p:nth-child(2){
 
   } 
 
-/* ---------------------------- */
-/* ------ DESKTOP STYLE  ------- */
-/* ---------------------------- */
-
-/* ------ SMALL DESKTOP ------- */
-@media only screen and (max-width: 500px) /* Mobile */ {
-  body {
-    background: green;
-  }
-}
