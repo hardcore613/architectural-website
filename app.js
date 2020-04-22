@@ -128,7 +128,7 @@ window.addEventListener("scroll", function() {
 let width = screen.width;
 
 // check devices orientation and width when page starts
-if(window.orientation === 90 || window.orientation === -90 && width <= 600 ){
+if((window.orientation === 90 || window.orientation === -90) && width <= 500 ){
     //remove the container, contact us and the footer
     this.document.querySelector('.container').classList.add('landscape-mobile');
     this.document.querySelector('.contact-us').classList.add('landscape-mobile');
@@ -159,7 +159,7 @@ if(window.orientation === 90 || window.orientation === -90 && width <= 600 ){
 // Listen for orientation changes
 window.addEventListener("orientationchange", function() {
     // Announce the new orientation number
-    if(this.window.orientation === 90 || this.window.orientation === -90 && width <= 500){
+    if((this.window.orientation === 90 || this.window.orientation === -90) && width <= 500){
         //remove the container, contact us and the footer
         this.document.querySelector('.container').classList.add('landscape-mobile');
         this.document.querySelector('.contact-us').classList.add('landscape-mobile');
