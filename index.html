@@ -8,11 +8,13 @@
     <meta name="format-detection" content="telephone=no">
     <!-- Font awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Stylesheet -->
     <link rel="stylesheet" href="styles.css">
     <title>AWF</title>
 </head>
-<body>
+<body data-barba="wrapper">
     <!-- PAGE CONTAINER -->
     <div class="container" id="home">
         <!-- STARS -->
@@ -78,7 +80,7 @@
         </nav>
 
         <!-- SHOWCASE -->
-        <header class="showcase">
+        <header class="showcase" data-aos="fade-left">
             <h2>ARCHITECTURE + DESIGN</h2>
             <h1>ARCHITECTURE</h1>
             <h1>WEB</h1>
@@ -95,15 +97,15 @@
 
         <!-- PROJECTS -->
         <section id="projects" class="projects">
-            <div class="section-1">
-                <div class="img"></div>
+            <div class="section-1" data-aos="fade-right">
+                <div class="img anim1"></div>
                 <div class='content'>
                     <h3>FEATURED PROJECT</h3>
                     <h2>CALIFORNIAX LIBRARY</h2>
                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                 </div>
             </div>
-            <div class="section-2">
+            <div class="section-2" data-aos="fade-left">
                 <div class="img"></div>
                 <div class='content'>
                     <h3>FEATURED PROJECT</h3>
@@ -111,7 +113,7 @@
                     <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</p>
                 </div>
             </div>
-            <div class="section-3">
+            <div class="section-3" data-aos="fade-right">
                 <div class="img"></div>
                 <div class='content'>
                     <h3>FEATURED PROJECT</h3>
@@ -122,7 +124,7 @@
         </section>
 
         <!-- ABOUT US -->
-        <section id="aboutus" class="about-us">
+        <section id="aboutus" class="about-us" data-aos="fade-in">
             <div class="leading-text">
                 <p class='leading'>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. In here we are looking to place.</p>
             </div>
@@ -220,7 +222,16 @@
             IN MOBILE LANDSCAPE
         </p>
     </div>
-
+     <!-- AOS -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+           offset: 400,
+           duration: 1000
+       });
+     </script>
+     <!-- app.js -->
     <script src="app.js"></script>
+
 </body>
 </html>
