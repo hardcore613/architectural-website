@@ -77,23 +77,22 @@ img{
     /* STARS */
     .container .star-1{
         position: absolute;
-        top: 90px;
+        top: 400vw;
         left: 35px;
-        font-size: 30px;
     }
 
     .container .star-2{
-        position: absolute;
+        /* position: absolute;
         top: 480px;
         right: 50px;
-        font-size: 30px;
+        font-size: 30px; */
     }
 
     .container .star-3{
-        position: absolute;
-        top: 950px;
+        /* position: absolute;
+        top: 400px;
         right: 70px;
-        font-size: 30px;
+        font-size: 30px; */
     }
 
     .container .star-4{
