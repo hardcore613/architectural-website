@@ -33,6 +33,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    outline: none;
 }
 
 html{
@@ -239,43 +240,6 @@ img{
         border-radius: 3px;
     }
 
-    /* MENU STARS */
-
-    .container .main-nav .main-menu .star-1-menu{
-        font-size: 25px;
-        position: absolute;
-        top: 15vw;
-        right: 20vw;
-        color: white !important;
-    }
-
-    .container .main-nav .main-menu .star-2-menu{
-        font-size: 25px;
-        position: absolute;
-        top: 130vw;
-        right: 40vw;
-        color: white !important;
-    }
-
-    /* ANIMATE */
-    .animation-star-menu{
-        animation-name: rot;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-        animation-delay: 0.5s;
-        animation-iteration-count: infinite;
-    }
-
-    /* KEYFRAMES */
-    @keyframes rot{
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
-    }
-
 /* ----------- HEADER ------------ */
 
 .showcase{
@@ -314,84 +278,6 @@ img{
     margin-top: 35px;
     padding: 12px 38px;
     border-radius: 3px;
-}
-
-/* STARS FOR ALL THE CONTAINERS */
-.container .star-1{
-    position: absolute;
-    top: 25vw;
-    left: 35px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-.container .star-2{
-    position: absolute;
-    top: 120vw;
-    right: 50px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-/* STARS */
-.container .star-3{
-    position: absolute;
-    top: 301vw;
-    right: 35px;
-    font-size: 25px;
-    /* opacity: 1; */
-}
-
-.container .star-4{
-    position: absolute;
-    top: 448vw;
-    left: 50px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-.container .star-5{
-    position: absolute;
-    top: 623vw;
-    left: 140px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-.contact-us .star-6{
-    position: absolute;
-    top: 30vw;
-    right: 50px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-.contact-us .star-7{
-    position: absolute;
-    top: 125vw;
-    left: 40px;
-    font-size: 25px;
-    opacity: 0;
-}
-
-
-/* ANIMATE */
-.animation-star{
-    animation-name: starAnim;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    animation-delay: 0.5s;
-    animation-iteration-count: once;
-}
-
-/* KEYFRAMES */
-@keyframes starAnim{
-    from{
-        opacity: 0
-    }
-    to{
-        opacity: 1
-    }
 }
 
 
@@ -708,24 +594,6 @@ footer .wrapper2 p:nth-child(2){
 /* iphone x height size */
 @media(device-height : 812px){ 
 
-    /* MENU STARS */
-
-    .container .main-nav .main-menu .star-1-menu{
-        font-size: 25px;
-        position: absolute;
-        top: 20vw;
-        right: 20vw;
-        color: white !important;
-    }
-
-    .container .main-nav .main-menu .star-2-menu{
-        font-size: 25px;
-        position: absolute;
-        top: 150vw;
-        right: 40vw;
-        color: white !important;
-    }
-
     /* ----------- SHOWCASE ------------ */
     .showcase{
         margin-top: 50vw; 
@@ -734,36 +602,6 @@ footer .wrapper2 p:nth-child(2){
     /* ----------- MORE INDICATOR ------------ */
     .more-indicator{
         margin-top: 30vw;
-    }
-
-    /* STARS FOR ALL THE CONTAINERS */
-    .container .star-1{
-        top: 35vw;
-    }
-
-    .container .star-2{
-        top: 132vw;
-    }
-
-    /* STARS */
-    .container .star-3{
-        top: 326vw;
-    }
-
-    .container .star-4{
-        top: 472vw;
-    }
-
-    .container .star-5{
-        top: 650vw;
-    }
-
-    .contact-us .star-6{
-        top: 30vw;
-    }
-
-    .contact-us .star-7{
-        top: 125vw;
     }
 
     /* ----------- MORE INDICATOR ------------ */
@@ -791,24 +629,6 @@ footer .wrapper2 p:nth-child(2){
         padding: 12px 40px;
     }
 
-     /* MENU STARS */
-
-     .container .main-nav .main-menu .star-1-menu{
-        font-size: 30px;
-        position: absolute;
-        top: 20vw;
-        right: 20vw;
-        color: white !important;
-    }
-
-    .container .main-nav .main-menu .star-2-menu{
-        font-size: 30px;
-        position: absolute;
-        top: 155vw;
-        right: 35vw;
-        color: white !important;
-    }
-
 /* ----------- HEADER ------------ */
 
 .showcase{
@@ -830,44 +650,6 @@ footer .wrapper2 p:nth-child(2){
     margin-top: 40px;
     padding: 14px 42px;
 }
-
-
-    /* STARS FOR ALL THE CONTAINERS */
-    .container .star-1{
-        top: 32vw;
-        font-size: 30px;
-    }
-
-    .container .star-2{
-        top: 132vw;
-        font-size: 30px;
-    }
-
-    /* STARS */
-    .container .star-3{
-        top: 333vw;
-        font-size: 30px;
-    }
-
-    .container .star-4{
-        top: 466vw;
-        font-size: 30px;
-    }
-
-    .container .star-5{
-        top: 640vw;
-        font-size: 30px;
-    }
-
-    .contact-us .star-6{
-        top: 30vw;
-        font-size: 30px;
-    }
-
-    .contact-us .star-7{
-        top: 135vw;
-        font-size: 30px;
-    }
 
 /* ----------- MORE INDICATOR ------------ */
 .more-indicator{
@@ -1110,6 +892,10 @@ img{
 }
 
 /* ----------- PROJECTS ------------ */
+.projects{
+    margin-top: 5vw;
+}
+
 .projects .img{
     height: 45vw;
     margin-top: 8vw;
@@ -1132,7 +918,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     row-gap: 3vw;
     column-gap: 5vw;
-    margin-top: 15vw;
+    margin-top: 8vw;
 }
 
 .about-us .img{
@@ -1349,7 +1135,8 @@ img{
 
 .projects .section-1 .img{
     order: 1;
-    height: 500px;
+    height: 30vw;
+    max-height: 500px;
 }
 
 .projects .section-2{
@@ -1365,7 +1152,8 @@ img{
 
 .projects .section-2 .img{
     order: 0;
-    height: 500px;
+    height: 30vw;
+    max-height: 500px;
 }
 
 .projects .section-3{
@@ -1381,7 +1169,8 @@ img{
 
 .projects .section-3 .img{
     order: 1;
-    height: 500px;
+    height: 30vw;
+    max-height: 500px;
 }
 
 .projects .section-1 .img{
@@ -1430,7 +1219,7 @@ img{
     column-gap: 40px;
     width: 90%;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
 .about-us .leading-text {
@@ -1439,8 +1228,10 @@ img{
 }
 
 .about-us .img{
-    height: 250px;
-    width: 250px;
+    height: 15vw;
+    width: 15vw;
+    max-width: 250px;
+    max-height: 250px;
     border-radius: 7px;
 }
 
