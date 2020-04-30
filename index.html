@@ -155,12 +155,12 @@
     <section id="contactus" class="contact-us">
         <div class="wrapper">
             <!-- TITLE -->
-            <h1>HIRE US.</h1>
+            <h1 class="confirmed">HIRE US.</h1>
             <!-- FORM -->
-            <form action="">
-                <input type="text" placeholder="NAME">
-                <input type="text" placeholder="EMAIL">
-                <input type="text" placeholder="MESSAGE">
+            <form action="" id="form">
+                <input type="text" placeholder="NAME" id="name">
+                <input type="email" placeholder="EMAIL" id="email">
+                <input type="text" placeholder="MESSAGE" id="message">
                 <button type="submit">GET IN TOUCH</button>
             </form>
         </div>
@@ -205,6 +205,7 @@
             IN MOBILE LANDSCAPE
         </p>
     </div>
+    
      <!-- AOS -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
      <script>
@@ -213,6 +214,8 @@
            duration: 1000
        });
      </script>
+     <!-- handleForm.js -->
+    <script src="handleForm.js"></script>
      <!-- app.js -->
     <script src="app.js"></script>
 
